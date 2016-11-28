@@ -1,87 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background_image"
+    android:orientation="vertical"
     tools:context="com.example.a5alumno.labavanzado4.MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
         android:background="@color/lightWhite"
+        android:gravity="center"
+        android:padding="10dp"
         android:stretchColumns="1">
-        <TableRow
-            android:gravity="center">
+
+        <TableRow android:gravity="center">
+
             <TextView
+                android:id="@+id/txt_view_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtViewName"
                 android:text="@string/txt_view_name_text"
-                android:textAppearance="@android:style/TextAppearance.Large"/>
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
             <EditText
+                android:id="@+id/edt_text_name"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtTxtName"
-                android:hint="@string/txt_view_name_hint_text"
+                android:layout_marginLeft="10dp"
                 android:background="@android:color/white"
-                android:layout_marginLeft="10dp"/>
+                android:hint="@string/txt_view_name_hint_text" />
         </TableRow>
-        <TableRow
-            android:gravity="center">
+
+        <TableRow android:gravity="center">
+
             <TextView
+                android:id="@+id/txt_view_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtViewAge"
                 android:text="@string/txt_view_age_text"
-                android:textAppearance="@android:style/TextAppearance.Large"/>
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
             <EditText
+                android:id="@+id/edt_txt_age"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtTxtAge"
-                android:inputType="number"
-                android:hint="@string/txt_view_age_hint_text"
+                android:layout_marginLeft="10dp"
                 android:background="@android:color/white"
-                android:layout_marginLeft="10dp"/>
+                android:hint="@string/txt_view_age_hint_text"
+                android:inputType="number" />
         </TableRow>
     </TableLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
+        android:background="@color/lightWhite"
+        android:orientation="vertical"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@color/lightWhite">
+        android:paddingRight="10dp">
+
         <Button
+            android:id="@+id/btn_query_db"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnQueryDB"
             android:text="@string/btn_consult_db_text"
-            android:textAppearance="@android:style/TextAppearance.Medium"/>
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
         <Button
+            android:id="@+id/btn_add_db"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnAddDB"
             android:text="@string/btn_add_register_db_text"
-            android:textAppearance="@android:style/TextAppearance.Medium"/>
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
         <Button
+            android:id="@+id/btn_delete_db"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnDeleteDB"
             android:text="@string/btn_delete_register_db_text"
-            android:textAppearance="@android:style/TextAppearance.Medium"/>
+            android:textAppearance="@android:style/TextAppearance.Medium" />
     </LinearLayout>
 
 </LinearLayout>
