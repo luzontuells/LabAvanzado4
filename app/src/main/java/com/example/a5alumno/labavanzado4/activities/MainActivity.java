@@ -81,9 +81,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_delete_db:
 
+                String deleteName = this.edtName.getText().toString();
+                String deleteAge = this.edtAge.getText().toString();
+
                 int deleteUri = getContentResolver().delete(MyContentProvider.CONTENT_URI, ParamsDb.STUDENT_NAME + "=? AND "
                         +ParamsDb.STUDENT_AGE +"=?",
-                        new String[]{this.edtName.getText().toString(),this.edtAge.getText().toString()});
+                        new String[]{deleteName,deleteAge});
+
+                Toast.makeText(this, deleteName + ", with an age of " + deleteAge + ", has been removed" ,Toast.LENGTH_SHORT).show();
                 break;
             default:
 
