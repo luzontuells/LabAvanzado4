@@ -1,9 +1,12 @@
-package com.example.a5alumno.labavanzado4;
+package com.example.a5alumno.labavanzado4.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.a5alumno.labavanzado4.R;
+import com.example.a5alumno.labavanzado4.data.ParamsDb;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
